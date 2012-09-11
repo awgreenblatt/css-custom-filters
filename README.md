@@ -1,4 +1,4 @@
 css-custom-filters
 ==================
 
-CSS Custom Filters
+Repository for experimental custom CSS Filters
