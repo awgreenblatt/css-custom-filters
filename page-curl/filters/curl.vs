@@ -26,6 +26,7 @@ uniform mat4 u_projectionMatrix;
 uniform float apex;
 uniform float theta;
 uniform float pageRotation;
+uniform vec3 pointLightPosition;
 
 varying vec2 v_texCoord;
 
@@ -106,8 +107,7 @@ void main()
     vec4 centerPt = getTransformedCenterPt(a_position);
     vec3 normal = normalize((centerPt - newpos).xyz);
 
-    vec3 lightPosition = vec3( 0.0, 0.0, 1.0 );
-    vec3 lightVector = normalize(lightPosition - a_position.xyz);
+    vec3 lightVector = normalize(pointLightPosition - a_position.xyz);
   
     // Bump up the lighting a bit so it doesn't get too dark too quickly
     pointLightIntensity = min(1.0, dot(normal, lightVector)+0.4);
