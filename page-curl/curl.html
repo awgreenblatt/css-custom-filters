@@ -4,12 +4,12 @@
 <title>CSS Custom Filters - Page Curl</title>
 <style type="text/css">
 .poster {
-	-webkit-filter: custom(url(filters/curl.vs) mix(url(filters/curl.fs) multiply source-atop), 20 20, apex -0.17, theta 90.0, pageRotation 0.0, ambientLightColor 0.2 0.2 0.2, pointLightColor 1.0 1.0 1.0, pointLightPosition 0.0 0.0 1.0);
+	-webkit-filter: custom(url(filters/curl.vs) mix(url(filters/curl.fs) multiply source-atop), 20 20, coneApex -0.17, coneAngle 90.0, pageRotation 0.0, ambientLightColor 0.0 0.0 0.0, pointLightColor 1.0 1.0 1.0, pointLightPosition 0.0 0.0 1.0);
 	-webkit-transition: -webkit-filter linear 1s;
 }
 
 .poster:hover {
-	-webkit-filter: custom(url(filters/curl.vs) mix(url(filters/curl.fs) multiply source-atop), 20 20, apex -0.17, theta 50.0, pageRotation 30.0, ambientLightColor 0.2 0.2 0.2, pointLightColor 1.0 1.0 1.0, pointLightPosition 0.0 0.0 1.0);
+	-webkit-filter: custom(url(filters/curl.vs) mix(url(filters/curl.fs) multiply source-atop), 20 20, coneApex -0.17, coneAngle 40.0, pageRotation 30.0, ambientLightColor 0.0 0.0 0.0, pointLightColor 1.0 1.0 1.0, pointLightPosition 0.0 0.0 1.0);
 }
 
 div.poster {
