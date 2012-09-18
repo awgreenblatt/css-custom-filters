@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CSS Custom Filters - Page Curl</title>
+<style type="text/css">
+.poster {
+	-webkit-filter: custom(url(filters/curl.vs) mix(url(filters/curl.fs) multiply source-atop), 20 20, coneApex -0.17, coneAngle 90.0, pageRotation 0.0, ambientLightColor 0.2 0.2 0.2, pointLightColor 1.0 1.0 1.0, pointLightPosition 0.0 0.0 1.0);
+	-webkit-transition: -webkit-filter linear 1s;
+}
+
+.poster:hover {
+	-webkit-filter: custom(url(filters/curl.vs) mix(url(filters/curl.fs) multiply source-atop), 20 20, coneApex -0.17, coneAngle 40.0, pageRotation 70.0, ambientLightColor 0.2 0.2 0.2, pointLightColor 1.0 1.0 1.0, pointLightPosition 0.0 0.0 1.0);
+}
+
+div.container {
+	margin: 2px;
+	border: 1px solid #0000ff;
+	height: auto;
+	width: 700px;
+	text-align: center;
+	margin: 100px auto 50px auto;
+	background-color:#FFFFFF;
+	position: relative;
+}
+
+div.background,
+div.poster {
+	width: 700px;
+	height: 600px;
+	position: absolute;
+	top: 200;
+	left: 200;
+	background-color: #ffffff;
+	padding: 20px;
+	border: 2px solid #333333;
+}
+
+div.background {
+	z-index: -10;
+}
+
+div.poster img {
+	margin:3px;
+	border:3px solid #888888;
+	float:right;
+}
+
+</style>
+</head>
+
+<body>
+	<div class="poster">
+		<h3>Move the mouse over any of the text or image to see the page curl effect...</h3>
+		<img src="../resources/owl.jpg"/>
+		<div class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</div>
+	</div>
+
+	<div class="background">Butcher put a bird on it pour-over direct trade next level occupy ethical gentrify dreamcatcher, wes anderson 3 wolf moon pop-up semiotics. Blog salvia four loko raw denim, williamsburg Austin chambray art party shoreditch bicycle rights hella sartorial fixie brunch. Put a bird on it ethnic VHS gentrify mcsweeney's polaroid freegan, fap echo park mlkshk. Mcsweeney's leggings put a bird on it, biodiesel banksy kogi echo park sartorial williamsburg fanny pack DIY. Blog carles tofu next level street art, pork belly vice retro sriracha kogi ethnic. Letterpress fanny pack ennui, vegan hella yr direct trade wes anderson photo booth lo-fi tumblr selvage vice. Seitan fingerstache pickled echo park ethnic terry richardson.
+
+	Cosby sweater mixtape irony thundercats wolf lo-fi authentic fap, banksy cred mcsweeney's cliche. Aesthetic fingerstache salvia banksy. +1 Austin cardigan brunch, stumptown godard sartorial you probably haven't heard of them cray. Craft beer twee flexitarian direct trade, narwhal cred ethical street art chillwave pitchfork bushwick sustainable wes anderson single-origin coffee typewriter. Whatever truffaut next level shoreditch, photo booth american apparel vinyl. Polaroid tattooed sustainable swag gastropub, post-ironic yr banksy. Kale chips retro cray master cleanse, brunch ennui banh mi pour-over you probably haven't heard of them terry richardson.</div>
+</body>
+</html>
