@@ -48,11 +48,11 @@ vec3 transform(vec3 pt)
     float coneAngleRad = coneAngle * degToRad;
     float pageRotationRad = pageRotation * degToRad;
 
-	float cosConeAngle = cos(coneAngleRad);
-	float sinConeAngle = sin(coneAngleRad);
+    float cosConeAngle = cos(coneAngleRad);
+    float sinConeAngle = sin(coneAngleRad);
 
-	float cosPageRotation = cos(pageRotationRad);
-	float sinPageRotation = sin(pageRotationRad);
+    float cosPageRotation = cos(pageRotationRad);
+    float sinPageRotation = sin(pageRotationRad);
 
     // Radius of the circle circumscribed by vertex (vi.x, vi.y) around coneApex on the x-y plane
     float r = sqrt((pt.x * pt.x) + pow((pt.y - coneApex), 2.0));
@@ -88,15 +88,15 @@ void main()
     
     vec3 newpos = transform(a_position.xyz);
 
-	vec3 newpos2 = transform(a_position.xyz + vec3(0.1, 0.0, 0.0));
-	vec3 newpos3 = transform(a_position.xyz + vec3(0.0, 0.1, 0.0));
+    vec3 newpos2 = transform(a_position.xyz + vec3(0.1, 0.0, 0.0));
+    vec3 newpos3 = transform(a_position.xyz + vec3(0.0, 0.1, 0.0));
 
-	vec3 v1 = newpos2 - newpos;
-	vec3 v2 = newpos3 - newpos;
-	vec3 normal = normalize(cross(v1, v2));
+    vec3 v1 = newpos2 - newpos;
+    vec3 v2 = newpos3 - newpos;
+    vec3 normal = normalize(cross(v1, v2));
 
     vec3 lightVector = normalize(pointLightPosition - a_position.xyz);
-	lightVector = pointLightPosition;
+    lightVector = pointLightPosition;
   
     pointLightIntensity = dot(normal, lightVector);
 
