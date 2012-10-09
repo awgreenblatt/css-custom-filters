@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CSS Custom Filters - Curtains</title>
+<style type="text/css">
+#poster {
+	-webkit-filter: custom(url(filters/curtains.vs) mix(url(filters/curtains.fs) multiply source-atop), 80 80 border-box, transform perspective(2000) scale(1.0) rotateX(0deg) rotateY(0deg) rotateZ(0deg), numFolds 4, foldSize 3, amount 0.0); 
+	-webkit-transition: -webkit-filter ease 3s; 
+}
+
+#poster:hover {
+	-webkit-filter: custom(url(filters/curtains.vs) mix(url(filters/curtains.fs) multiply source-atop), 80 80 border-box, transform perspective(2000) scale(1.0) rotateX(0deg) rotateY(0deg) rotateZ(0deg), numFolds 4, foldSize 3, amount 1.0); 
+}
+
+#poster {
+	z-index: 2;
+	background: #C3B08F;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	padding: 0px 10px 0px 10px;
+	border: 3px ridge #888888;
+}
+
+#poster img {
+	margin:3px;
+	border:1px solid #888888;
+}
+
+#background {
+	z-index: 1;
+	background: #3167AA;
+	color: #FFFFFF;
+	width: 700px;
+	height: 100%;
+	font-size: xx-large;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#background p {
+	margin-top: 200px;
+}
+
+#container {
+	position: relative;
+	height: 650px;
+	width: 700px;
+	text-align: center;
+	margin: 100px auto 50px auto;
+	background-color:#FFFFFF;
+	z-index: 2;
+}
+
+body {
+	background-color: #C3B08F;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="background">
+		<p>ACT 1 - A New Beginning</p>
+		</div>
+  	 	<div id="poster">
+			<h3>Move the mouse over any of the text or image to open the curtains...</h3>
+			<img src="../resources/owl.jpg"/>
+			<div class="desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</div>
+		</div>
+	</div>
+</body>
+</html>
