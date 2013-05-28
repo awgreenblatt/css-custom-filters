@@ -15,12 +15,12 @@
 
 #layer2 {
     background-image: url(grass.jpg);
-    -webkit-filter: custom(url(shaders/circular_mask.vs) mix(url(shaders/circular_mask.fs) multiply source-atop), 50 50 border-box, radius 0.32, center 0.52 0.45, opacity 1.0, feather 0.2);
+	-webkit-filter: custom(url(shaders/circular_mask.vs) mix(url(shaders/circular_mask.fs) multiply source-atop), 50 50 border-box, radius 0.32, center 0.52 0.45, opacity 1.0, feather 0.2); 
     -webkit-transition: -webkit-filter 3s;
 
 }
 
 #layer2:hover {
-    -webkit-filter: custom(url(shaders/circular_mask.vs) mix(url(shaders/circular_mask.fs) multiply source-atop), 50 50 border-box, radius 0.32, center 0.52 0.45, opacity 0.48, feather 0.2);
+	-webkit-filter: custom(url(shaders/circular_mask.vs) mix(url(shaders/circular_mask.fs) multiply source-atop), 50 50 border-box, radius 0.32, center 0.52 0.45, opacity 0.30, feather 0.2);
 }
 
