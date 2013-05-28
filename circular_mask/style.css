@@ -1,0 +1,26 @@
+.layer-container { position: relative }
+
+.layer { 
+    background-repeat: no-repeat;
+    background-size:contain;   
+    position: absolute;
+    top: 0; left: 0;
+    width: 500px;
+    height: 400px;
+}
+
+#layer1 {
+    background-image: url(croc.jpg);   
+}
+
+#layer2 {
+    background-image: url(grass.jpg);
+    -webkit-filter: custom(url(shaders/circular_mask.vs) mix(url(shaders/circular_mask.fs) multiply source-atop), 50 50 border-box, radius 0.32, center 0.52 0.45, opacity 1.0, feather 0.2);
+    -webkit-transition: -webkit-filter 3s;
+
+}
+
+#layer2:hover {
+    -webkit-filter: custom(url(shaders/circular_mask.vs) mix(url(shaders/circular_mask.fs) multiply source-atop), 50 50 border-box, radius 0.32, center 0.52 0.45, opacity 0.48, feather 0.2);
+}
+
