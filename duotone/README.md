@@ -11,4 +11,7 @@ and all white pixels become (WR, WG, WB)
 
 All color components range from 0 to 255
 
+In the index.html example provided, the SVG file is used as the source for an IMG. The SVG IMG is black and transparent.  To make the transparent parts white, I set the style of the IMG to "background-color: white"
+
+
 thief.svg courtesy of Igor Yanovskiy, from The Noun Project
