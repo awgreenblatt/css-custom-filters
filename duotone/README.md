@@ -11,3 +11,4 @@ and all white pixels become (WR, WG, WB)
 
 All color components range from 0 to 255
 
+thief.svg courtesy of Igor Yanovskiy, from The Noun Project
